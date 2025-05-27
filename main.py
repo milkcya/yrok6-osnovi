@@ -1,6 +1,3 @@
-score = 0
-
-
 def has_digit(password):
     return any(char.isdigit() for char in password)
 
@@ -21,7 +18,9 @@ def has_symbols(password):
     return any(not char.isalnum() for char in password)
 
 
-password = input("Введите пароль: ")
+def main():
+    password = input("Введите пароль: ")
+    score = 0
 
 checks = [
     has_digit,
@@ -32,5 +31,7 @@ checks = [
 ]
     
 score = sum(2 for check in checks if check(password))
-
 print(f"Рейтинг пароля: {score}")
+
+if __name__ == "__main__":
+    main()
