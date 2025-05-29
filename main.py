@@ -30,8 +30,8 @@ def main():
         has_symbols
     ]
     
-score = sum(2 for check in checks if check(password))
-print(f"Рейтинг пароля: {score}")
+    score = sum(2 for check in checks if check(password))
+    print(f"Рейтинг пароля: {score}")
 
 
 if __name__ == "__main__":
