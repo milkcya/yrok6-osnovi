@@ -30,17 +30,9 @@ def main():
         has_symbols
     ]
     
-<<<<<<< Updated upstream:main.py
 score = sum(2 for check in checks if check(password))
 print(f"Рейтинг пароля: {score}")
 
+
 if __name__ == "__main__":
     main()
-=======
-    score = sum(2 for check in checks if check(password))
-    print(f"Рейтинг пароля: {score}")
-    
-    
-if __name__ == "__main__":
-    main()
->>>>>>> Stashed changes:score = 0.py
