@@ -22,16 +22,25 @@ def main():
     password = input("Введите пароль: ")
     score = 0
 
-checks = [
-    has_digit,
-    is_very_long,
-    has_lower_letters,
-    has_upper_letters,
-    has_symbols
-]
+    checks = [
+        has_digit,
+        is_very_long,
+        has_lower_letters,
+        has_upper_letters,
+        has_symbols
+    ]
     
+<<<<<<< Updated upstream:main.py
 score = sum(2 for check in checks if check(password))
 print(f"Рейтинг пароля: {score}")
 
 if __name__ == "__main__":
     main()
+=======
+    score = sum(2 for check in checks if check(password))
+    print(f"Рейтинг пароля: {score}")
+    
+    
+if __name__ == "__main__":
+    main()
+>>>>>>> Stashed changes:score = 0.py
